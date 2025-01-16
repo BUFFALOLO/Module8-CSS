@@ -1,0 +1,107 @@
+MODULE 8 - LESSON 1 - CSS FUNDAMENTALS
+
+CSS acts as the stylist of the web, defining how HTML elements appear on screen. It's the magic wand that transforms the skeletal HTML structure into a visually engaging materpiece.
+
+HTML sets up the stage with various elements like heading, paragraphs & links. CSS sweeps in to style these elements dictating their color, size & postion.
+
+CSS syntax is a set of rules that define styles for HTML elements.
+
+Selectors
+    Pinpoint the HTML elements you want to style.
+    They are like tags labeling each art piece in our digital gallery.
+
+Declaration Blocks
+    Contain one or more declarations separated by semicolons.
+    Each declaration includes a CSS property & value.
+
+For instance, to dress out <h1> heading in a royal blue color:
+h1 {
+    color: royalblue;
+}
+
+There are 3 ways to incorporate CSS into our HTML masterpiece, each akin to choosing a different brush for our canvas:
+    Inline CSS
+    Internal CSS
+    External CSS
+
+Inline CSS: It is like using a fine-tip pen, allowing you to apply styles directly within an HTML tag. However, it's specific & limited in scope.
+<h1 style="color: blue;">This text is blue.</h1>
+
+Internal CSS: Used the <style> element in the HTML <head>, acting like a sketchbook where you define styles specifically for that page.
+<head>
+    <style>
+        body {
+            background-color: #lightgray;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+External CSS: Involves linking a separate CSS file to your HTML, comparable to a comprehensive art portfolio. This method promotes reuse & organization.
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+SELECTORS 
+Selectors are the needles in our tailoring kit, picking out specific elements to style. Class & ID selectors elevate our styling precision.
+
+Class Selectors (.classname): are like fabric patterns, applied to multiple elements to unify their design.
+.special-text {
+    color: red;
+    font-weight: bold;
+}
+
+ID Selectors (#idname): are like custom fits, unique identifiers for styling singular elements.
+#main-heading {
+    color: darkmagenta;
+    font-size: 36px;
+}
+
+!important rule: is the override button in our kit, its use is best kept minimal to avoid CSS chaos.
+.urgent-text {
+    color: red !important;
+}
+
+COMBINATORS & GROUPING SELECTORS 
+Combinators & grouping selectors are our sewing patterns, defining relationships between elements & optimizing our styling efforts.
+
+Grouping Selectors allow us to apply a single style to multiple elements, akin to cutting multiple fabrics with one scissor stroke.
+h1, h2, h3 {
+    font-family: 'Arial'. sans-serif;
+}
+
+Combinators specify relationships between selectors, tailoring styles based on their hierarchy & proximity.
+
+Descendant Combinator
+article p {
+    color: slategray;
+}
+
+Child Combinator
+article > p {
+    margin-left: 20px;
+}
+
+TEXT & FONT STYLING 
+Text & font styling are the threads that add color & texture to our web attire, enhancing readability & aesthetic appeal.
+IMPORTANT: for comprehensive information & guidance on text & font styling, you can refer to the Mozilla Developer Network (MDN) web documentation.
+
+COLORS, BACKGROUNDS & UNITS
+Colors & backgrounds add vibrancy & depth, while units (px, em, rem, %) offer the tape measure for precise styling.
+IMPORTANT: for comprehensive information & guidance on text & font styling, you can refer to the Mozilla Developer Network (MDN) web documentation.
+
+UNBOXING THE CSS BOX MODEL 
+The CSS Box Model is a set of rules that define layers for every web element, each serving a unique purpose in determining how that element appears on the page.
+The Box Model consists of four main parts: Content, Padding, Border, & Margin.
+Content: the innermost layer, the core of the box, representing your text, image, or video, the essence of your webpage.
+Padding: it surrounds the content, ensuring it doesn't touch the box's sides, the space between the content & the border.
+Border: the visible cardboard edge, defining the outer limits of your content, the outermost layer, defining the element's shape & size.
+Margin: the space between the box & other elements.
+
+Understanding the box model is crucial for a few reasons:
+Layout Control: margins & paddings are your best friends in spacing elements just right.
+Troubleshooting: A solid grasp of the box model can often quickly solve these mysteries.
+Responsive Design: The box model's flexibility helps ensure your site remains beautiful & usable on any device adjusting to different screen sizes.
+
