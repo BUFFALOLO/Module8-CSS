@@ -1,0 +1,23 @@
+MODULE 8 - LESSON 3 - CSS BOX MODEL & LAYOUT
+How we position elements is similar to setting up camp.
+
+Static: The default setting. It sits according to the natural flow of the page, unmoved by positioning commands.
+Relative: It allows you to move your tent relative to where it would normally stand. It's still part of the campsite layout but with a personal twist.
+Absolute: It positions itself in relation to the nearest positioned ancestor (not static). Your element can float in a precise spot, ignoring the traditional flow of the document.
+Fixed: It stays in the exact same spot in the viewport, no matter how far you scroll down the path.
+Sticky: A mix of static & fixed, like a tent that's on the ground until you start moving, then it sticks to the top of your view as you explore further. It toggles between relative & fixed based on the user's scroll position.
+
+The display property dictates how items are displayed. It's like deciding whether to set up a tent, a lean-to, or just sleep under the stars.
+Block: Block elements are like tents that demand their own space. They take up the full width available, stacking vertically.
+Inline: Sociable, aligning side by side, think of sleeping bags.
+Inline-Block: A blend, like a bivvy bag, aligns but respects padding & margins.
+None: Opts out, making the element invisible & removing it from the document flow.
+
+FLOATS & CLEARING FLOATS
+Floats are like canoes on a river, allowing elements to drift left or right, letting content flow around them. It's handy for wrapping text around images or creating layouts.
+But, beware of the rapids! Without clearing floats, your layout can capsize, with elements overflowing their containers.
+Clearing floats brings everything back in line, ensuring the content below the float respects its boundaries.
+
+Z-index: determines who's on top of the mountain & who's nestled in the valley, allowing for intricate layering & interaction in your design.
+Overflow: lets you control how to handle this excess whether to clip it, add scroll bars or let it spill out.
+
