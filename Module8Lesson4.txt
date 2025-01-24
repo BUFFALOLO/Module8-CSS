@@ -1,0 +1,54 @@
+MODULE 8 - LESSON 4 - ADVANCED CSS PROPERTIES
+
+MIXING COLORS WITH RGBA
+In web design, colors breathe life into our creations, but RGBA takes it a step further. RGBA, representing Red, Green, Blue and Alpha, let us control not just color but also opacity.
+With RGBA, we can layer elements seamlessly, like watercolor on a canvas. 
+background-color: rgba(135, 206, 235, 0.7); This gives us a sky blue background with a touch of transparency.
+
+LINEAR & RADIAL GRADIENTS
+Gradients are the magic of color transitions, blending hues seamlessly. With CSS< we can create this magic using linear & radial gradients, adding depth & dimension to our digital canvas.
+Linear gradient is perfect for creating backgrounds that mimic the horizon or fabric draped across a scene. 
+background: linear-gradient(to right, rgba(255, 99, 71, 0.5), rgba(255, 159, 64, 0.5)); 
+
+Radial gradient is like a glow of a lantern or the rippe of water when a pebble is dropped. It brings a sense of softness & light to our digital artwork.
+background: radial-gradient(circle, rgba(255, 255, 255, 0.6), (rgba(0, 0, 255, 0.6));
+
+SHADOWS & TEXT EFFECTS
+Shadows are a web designer's tool to add depth, contrast & focus to web elements.
+section, article, aside {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+Beyond shadows, CSS offers a treasure trove of properties to style your text.
+h1 {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+TRANSITIONS & ANIMATIONS
+With the below code the button's background color changes smoothly when hovered over.
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(33, 136, 56, 0.8);
+}
+
+With the below code a keyframe animation makes the button gently pulse.
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+button {
+    animation: pulse 2s infinite;
+}
+
